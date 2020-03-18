@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\git\\MDS\\MDS\\ProiectMDS\\ProiectMDS.csproj": {}
+    "C:\\Users\\Euseb\\Documents\\ProiectMDS\\ProiectMDS\\ProiectMDS.csproj": {}
   },
   "projects": {
-    "D:\\git\\MDS\\MDS\\ProiectMDS\\ProiectMDS.csproj": {
+    "C:\\Users\\Euseb\\Documents\\ProiectMDS\\ProiectMDS\\ProiectMDS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\git\\MDS\\MDS\\ProiectMDS\\ProiectMDS.csproj",
+        "projectUniqueName": "C:\\Users\\Euseb\\Documents\\ProiectMDS\\ProiectMDS\\ProiectMDS.csproj",
         "projectName": "ProiectMDS",
-        "projectPath": "D:\\git\\MDS\\MDS\\ProiectMDS\\ProiectMDS.csproj",
-        "packagesPath": "C:\\Users\\eusebiu.timofte\\.nuget\\packages\\",
-        "outputPath": "D:\\git\\MDS\\MDS\\ProiectMDS\\obj\\",
+        "projectPath": "C:\\Users\\Euseb\\Documents\\ProiectMDS\\ProiectMDS\\ProiectMDS.csproj",
+        "packagesPath": "C:\\Users\\Euseb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Euseb\\Documents\\ProiectMDS\\ProiectMDS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\eusebiu.timofte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Euseb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
