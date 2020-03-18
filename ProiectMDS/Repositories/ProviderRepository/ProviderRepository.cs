@@ -7,7 +7,7 @@ using ProiectMDS.Models;
 
 namespace ProiectMDS.Repositories.ProviderRepository
 {
-    public class ProviderRepository
+    public class ProviderRepository: IProviderRepository
     {
         public Context _context { get; set; }
 

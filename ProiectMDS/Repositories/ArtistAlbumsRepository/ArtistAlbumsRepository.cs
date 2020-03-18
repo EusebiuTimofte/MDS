@@ -7,7 +7,7 @@ using ProiectMDS.Contexts;
 
 namespace ProiectMDS.Repositories.ArtistAlbumAlbumsRepository
 {
-    public class ArtistAlbumsRepository
+    public class ArtistAlbumsRepository: IArtistAlbumsRepository
     {
         public Context _context { get; set; }
 

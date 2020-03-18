@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using ProiectMDS.Models;
 namespace ProiectMDS.Repositories.ProviderRepository
 {
-    public interface Interface
+    public interface IProviderRepository
     {
         List<Provider> GetAll();
         Provider Get(int Id);

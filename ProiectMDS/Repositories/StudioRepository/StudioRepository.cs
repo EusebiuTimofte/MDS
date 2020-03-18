@@ -7,7 +7,7 @@ using ProiectMDS.Contexts;
 
 namespace ProiectMDS.Repositories.StudioRepository
 {
-    public class StudioRepository
+    public class StudioRepository: IStudioRepository
     {
         public Context _context { get; set; }
 

@@ -6,7 +6,7 @@ using ProiectMDS.Models;
 
 namespace ProiectMDS.Repositories.SongAlbumAlbumsRepository
 {
-    public interface ISongAlbumsInterface
+    public interface ISongAlbumsRepository
     {
         List<SongAlbum> GetAll();
         SongAlbum Get(int Id);

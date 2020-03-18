@@ -11,6 +11,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using ProiectMDS.Data;
+using ProiectMDS.Repositories.AlbumRepository;
+using ProiectMDS.Repositories.ArtistAlbumAlbumsRepository;
+using ProiectMDS.Repositories.ArtistRepository;
+using ProiectMDS.Repositories.ProviderRepository;
+using ProiectMDS.Repositories.SongAlbumAlbumsRepository;
+using ProiectMDS.Repositories.SongRepository;
+using ProiectMDS.Repositories.StudioRepository;
 
 namespace ProiectMDS
 {
@@ -38,7 +45,17 @@ namespace ProiectMDS
 
             services.AddDbContext<ProiectMDSContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("ProiectMDSContext")));
+
+            services.AddTransient<IArtistRepository, ArtistRepository>();
+            services.AddTransient<IAlbumRepository, AlbumRepository>();
+            services.AddTransient<IArtistAlbumsRepository, ArtistAlbumsRepository>();
+            services.AddTransient<IProviderRepository, ProviderRepository>();
+            services.AddTransient<ISongAlbumsRepository, SongAlbumsRepository>();
+            services.AddTransient<ISongRepository, SongRepository>();
+            services.AddTransient<IStudioRepository, StudioRepository>();
+
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -56,7 +73,11 @@ namespace ProiectMDS
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            app.UseCors(builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
             app.UseMvc();
         }
     }
