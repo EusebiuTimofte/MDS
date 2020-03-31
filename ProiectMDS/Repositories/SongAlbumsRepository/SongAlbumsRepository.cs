@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using ProiectMDS.Models;
 using ProiectMDS.Contexts;
 
-namespace ProiectMDS.Repositories.SongAlbumAlbumsRepository
+namespace ProiectMDS.Repositories.SongAlbumsRepository
 {
     public class SongAlbumsRepository: ISongAlbumsRepository
     {

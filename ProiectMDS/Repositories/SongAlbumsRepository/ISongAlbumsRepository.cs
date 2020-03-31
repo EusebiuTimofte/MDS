@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ProiectMDS.Models;
 
-namespace ProiectMDS.Repositories.SongAlbumAlbumsRepository
+namespace ProiectMDS.Repositories.SongAlbumsRepository
 {
     public interface ISongAlbumsRepository
     {

@@ -7,7 +7,7 @@ namespace ProiectMDS.DTOs
 {
     public class AlbumDTO
     {
-        public string name { get; set; }
+        public string Name { get; set; }
         public int ReleaseYear { get; set; }
 
         public int StudioId { get; set; }

@@ -12,10 +12,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using ProiectMDS.Data;
 using ProiectMDS.Repositories.AlbumRepository;
-using ProiectMDS.Repositories.ArtistAlbumAlbumsRepository;
+using ProiectMDS.Repositories.ArtistAlbumsRepository;
 using ProiectMDS.Repositories.ArtistRepository;
 using ProiectMDS.Repositories.ProviderRepository;
-using ProiectMDS.Repositories.SongAlbumAlbumsRepository;
+using ProiectMDS.Repositories.SongAlbumsRepository;
 using ProiectMDS.Repositories.SongRepository;
 using ProiectMDS.Repositories.StudioRepository;
 
