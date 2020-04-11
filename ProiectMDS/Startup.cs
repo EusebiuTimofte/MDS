@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using ProiectMDS.Data;
+using ProiectMDS.Contexts;
 using ProiectMDS.Repositories.AlbumRepository;
 using ProiectMDS.Repositories.ArtistAlbumsRepository;
 using ProiectMDS.Repositories.ArtistRepository;
@@ -43,8 +43,8 @@ namespace ProiectMDS
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddDbContext<ProiectMDSContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("ProiectMDSContext")));
+            services.AddDbContext<Context>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Context")));
 
             services.AddTransient<IArtistRepository, ArtistRepository>();
             services.AddTransient<IAlbumRepository, AlbumRepository>();

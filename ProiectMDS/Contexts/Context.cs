@@ -21,7 +21,7 @@ namespace ProiectMDS.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (isMigration)
-                optionsBuilder.UseSqlServer(@"Server=.\;Database=DBProiectMDS;Trusted_Connection=True");
+                optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=DBProiectMDS;Trusted_Connection=True;MultipleActiveResultSets=true");
         }
 
         public Context()
